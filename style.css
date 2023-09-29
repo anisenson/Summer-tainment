@@ -1,0 +1,35 @@
+body {
+    background-color: white;
+    text-align: center;
+}
+
+.background {
+    background-color: black;
+}
+
+.nav-link {
+    color: #125740 ;
+}
+
+.arrow {
+    box-sizing: border-box;
+    height: 4vw;
+    width: 4vw;
+    border-style: solid;
+    border-color: #125740 ;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 75ms ease-in-out;
+  }
+  
+  .arrow:hover {
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
