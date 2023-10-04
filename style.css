@@ -1,24 +1,41 @@
 body {
-    background-color: white;
+    background-color: #125740;
     text-align: center;
 }
 
 .background {
   width: 100%;
-   height: 100vh; 
-   overflow: hidden;
-
- background-color: black;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
+
+.background::before {
+  content: "";
+  background-image: url("Images/backgroundimg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Put it behind the content */
+}
+
 
 
 .homeimg {
   width: 1000px;
   height: auto;
+  border: 3px solid white;
 }
 
 .homeimg2 {
-  width: 400px
+  width: 70%;
+  border: 3px solid white;
 
 }
 
@@ -31,7 +48,7 @@ body {
     height: 4vw;
     width: 4vw;
     border-style: solid;
-    border-color: #125740 ;
+    border-color: white ;
     border-width: 0px 1px 1px 0px;
     transform: rotate(45deg);
     transition: border-width 75ms ease-in-out;
@@ -54,17 +71,18 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: #;
-    border: 5px solid #01070d;
-    color: #01070d;
+    border: 5px solid #000000;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
   }
   
   .breadcrumblink1 {
-    color: #01070d;
+    color: #000000;
   }
   
   .breadcrumb-item {
-    color: #01070d;
+    color: #000000;
   }
+
