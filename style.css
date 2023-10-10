@@ -104,4 +104,61 @@ body {
     color: white;
   }
 
- 
+ /*FOOTER*/
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.social-icons a:hover {
+  background-color: #ddd;
+}
+
+.social-icons i {
+  font-size: 20px;
+}
+
+.p2 {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}
+
+.social {
+  text-decoration: none;
+}
+/*--------------------*/
